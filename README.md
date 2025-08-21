@@ -106,16 +106,6 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 **Response Example:**
 
-````json
-## API Endpoint
-
-### Get Top 10 Largest Bitcoin Transactions (last 1 hour)
-
-**URL:**
-`GET http://localhost:3000/bitcoin/transactions/largest`
-
-**Response Example:**
-
 ```json
 {
   "message": "Top 10 largest transactions by size from the last hour.",
@@ -141,9 +131,95 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
         "block_hash": "00000000000000000000560746dc28f52b99900dbdda5abef591d4f36a4b7668",
         "block_time": 1755784702
       }
+    },
+    {
+      "txid": "5c9b4cdccd2644fc24f0a345ad81d96d4a93fdeec0ee22ce6d6b120de84456e0",
+      "size_bytes": 78492,
+      "fee_satoshis": 36506,
+      "status": {
+        "confirmed": true,
+        "block_height": 911033,
+        "block_hash": "00000000000000000000560746dc28f52b99900dbdda5abef591d4f36a4b7668",
+        "block_time": 1755784702
+      }
+    },
+    {
+      "txid": "5c4dc438debd5d617025d2b2c815acff08b92a8cc7f3917609b91a4e444ecf0e",
+      "size_bytes": 74957,
+      "fee_satoshis": 81316,
+      "status": {
+        "confirmed": true,
+        "block_height": 911035,
+        "block_hash": "000000000000000000021e4f97d1d71027ac87d864994d69fc348c5258e7dd21",
+        "block_time": 1755785451
+      }
+    },
+    {
+      "txid": "c6062d4bbe0e1d27495f17d0c2277df4d50da36573be279dae102933f3247470",
+      "size_bytes": 73792,
+      "fee_satoshis": 78310,
+      "status": {
+        "confirmed": true,
+        "block_height": 911036,
+        "block_hash": "00000000000000000001873b16dd5ed6857ad929653aa40420ea38eedd980169",
+        "block_time": 1755785553
+      }
+    },
+    {
+      "txid": "57752bd2a0407f26d2828de986a1ab7284a15d43bd85bf58379949eeac74a8c5",
+      "size_bytes": 73785,
+      "fee_satoshis": 78310,
+      "status": {
+        "confirmed": true,
+        "block_height": 911035,
+        "block_hash": "000000000000000000021e4f97d1d71027ac87d864994d69fc348c5258e7dd21",
+        "block_time": 1755785451
+      }
+    },
+    {
+      "txid": "a37404e10b17a25a5d5e9922c2253d2fde70514d95a538f4dfc21c7de077dee3",
+      "size_bytes": 67681,
+      "fee_satoshis": 73428,
+      "status": {
+        "confirmed": true,
+        "block_height": 911035,
+        "block_hash": "000000000000000000021e4f97d1d71027ac87d864994d69fc348c5258e7dd21",
+        "block_time": 1755785451
+      }
+    },
+    {
+      "txid": "a14ab056bad9ecfce8d20c6d8c5ced232e1afc0c3ae27292e953fba5c71c3ecb",
+      "size_bytes": 58918,
+      "fee_satoshis": 21120,
+      "status": {
+        "confirmed": true,
+        "block_height": 911032,
+        "block_hash": "0000000000000000000121dc994959e44e0fa09bd4493bf697821e42bce6a1f6",
+        "block_time": 1755784352
+      }
+    },
+    {
+      "txid": "82cc9d3a4457a8fda8f62f4a46e4568057e8b80bc4650d4cf13a6d09ca766f77",
+      "size_bytes": 53557,
+      "fee_satoshis": 58116,
+      "status": {
+        "confirmed": true,
+        "block_height": 911035,
+        "block_hash": "000000000000000000021e4f97d1d71027ac87d864994d69fc348c5258e7dd21",
+        "block_time": 1755785451
+      }
+    },
+    {
+      "txid": "472ccd263942590bb05fd68aaa64a244eece584fa355c3970cd97e67303e4127",
+      "size_bytes": 53378,
+      "fee_satoshis": 34698,
+      "status": {
+        "confirmed": true,
+        "block_height": 911032,
+        "block_hash": "0000000000000000000121dc994959e44e0fa09bd4493bf697821e42bce6a1f6",
+        "block_time": 1755784352
+      }
     }
-    // ... up to 10 transactions
   ]
 }
-
-````
+```
