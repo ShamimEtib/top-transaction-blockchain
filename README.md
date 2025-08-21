@@ -96,3 +96,54 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+## API Endpoint
+
+### Get Top 10 Largest Bitcoin Transactions (last 1 hour)
+
+**URL:**  
+`GET http://localhost:3000/bitcoin/transactions/largest`
+
+**Response Example:**
+
+````json
+## API Endpoint
+
+### Get Top 10 Largest Bitcoin Transactions (last 1 hour)
+
+**URL:**
+`GET http://localhost:3000/bitcoin/transactions/largest`
+
+**Response Example:**
+
+```json
+{
+  "message": "Top 10 largest transactions by size from the last hour.",
+  "data": [
+    {
+      "txid": "e793b218efcdf8e916e4ce9b43fbcf899fb23edcf769ae67dad1f3bb6661eabe",
+      "size_bytes": 107057,
+      "fee_satoshis": 116116,
+      "status": {
+        "confirmed": true,
+        "block_height": 911035,
+        "block_hash": "000000000000000000021e4f97d1d71027ac87d864994d69fc348c5258e7dd21",
+        "block_time": 1755785451
+      }
+    },
+    {
+      "txid": "0366a7268ed51a978227bfd546e08a4300fa6a3414ad3785b41b3271123496ff",
+      "size_bytes": 93909,
+      "fee_satoshis": 43682,
+      "status": {
+        "confirmed": true,
+        "block_height": 911033,
+        "block_hash": "00000000000000000000560746dc28f52b99900dbdda5abef591d4f36a4b7668",
+        "block_time": 1755784702
+      }
+    }
+    // ... up to 10 transactions
+  ]
+}
+
+````
